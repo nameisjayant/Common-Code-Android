@@ -1,4 +1,4 @@
-package com.yt.commoncodeandroid
+package com.yt.commoncodeandroid.bbase
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,21 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.yt.commoncodeandroid.ui.theme.CommonCodeAndroidTheme
 
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            CommonCodeAndroidTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                   Button(onClick = {}) {
+class MainActivity : BaseActivity() {
 
+    @Composable
+    override fun Content() {
 
-                   }
-                }
-            }
+        Button(onClick = {}) {
+
         }
     }
+
 }
