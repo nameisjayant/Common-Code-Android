@@ -13,6 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CommonCodeAndroid"
         tools:targetApi="31">
+        <activity android:name=".bbase.AnotherActivity"/>
         <activity
             android:name=".bbase.MainActivity"
             android:exported="true"
